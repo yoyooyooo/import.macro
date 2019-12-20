@@ -87,7 +87,7 @@ customImport('filename');
 output：
 
 ```js
-import Palette from '../a/b/filename';
+import filename from '../a/b/filename';
 filename;
 ```
 

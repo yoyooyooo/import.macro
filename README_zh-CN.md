@@ -87,7 +87,7 @@ customImport('filename');
 会被编译成：
 
 ```js
-import Palette from '../a/b/filename';
+import filename from '../a/b/filename';
 filename;
 ```
 

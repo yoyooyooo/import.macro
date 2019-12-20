@@ -1,0 +1,13 @@
+{
+  "singleQuote": true,
+  "trailingComma": "none",
+  "printWidth": 80,
+  "semi": true,
+  "tabWidth": 2,
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": { "parser": "babel" }
+    }
+  ]
+}

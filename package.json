@@ -1,0 +1,36 @@
+{
+  "name": "import.macro",
+  "version": "1.0.0",
+  "description": "auto add importDeclaration",
+  "main": "macro.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:update": "jest -u"
+  },
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "babel-macros",
+    "babel-plugin-macros"
+  ],
+  "author": "jihu777@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/generator": "^7.7.4",
+    "@babel/parser": "^7.7.5",
+    "@babel/plugin-syntax-jsx": "^7.7.4",
+    "@babel/traverse": "^7.7.4",
+    "@babel/types": "^7.7.4",
+    "babel-plugin-tester": "^8.0.1",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "babel-plugin-macros": "^2.8.0",
+    "lodash": "^4.17.15"
+  },
+  "files": [
+    "macro.js"
+  ]
+}

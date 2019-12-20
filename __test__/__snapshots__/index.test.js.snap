@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`icon default duplicate import: default duplicate import 1`] = `
+
+import i from '../macro';
+i("./a/b");
+i("./a/b");
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import _aB from './a/b';
+_aB;
+_aB;
+
+
+`;
+
+exports[`icon default import with options: default import with options 1`] = `
+
+import i from '../macro';
+i("./a/b");
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import _aB from './a/b';
+_aB;
+
+
+`;
+
+exports[`icon default import: default import 1`] = `
+
+import i from '../macro';
+i("./a/b", { isDefaultExport: false });
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { _aB } from './a/b';
+_aB;
+
+
+`;
+
+exports[`icon duplicate: duplicate 1`] = `
+
+import { muiIcon } from '../macro';
+muiIcon('Palette');
+muiIcon('Palette');
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import Palette from '../a/b/Palette';
+Palette;
+Palette;
+
+
+`;
+
+exports[`icon function as component: function as component 1`] = `
+
+import { muiIcon } from '../macro';
+muiIcon('@Palette');
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import Palette from '../a/b/Palette';
+<Palette />;
+
+
+`;
+
+exports[`icon function component with options: function component with options 1`] = `
+
+import { muiIcon } from '../macro';
+muiIcon('@Palette', { isDefaultExport: false });
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import Palette from '../a/b/Palette';
+<Palette isDefaultExport={false} />;
+
+
+`;
+
+exports[`icon function component with props and options: function component with props and options 1`] = `
+
+import { muiIcon } from '../macro';
+muiIcon('@Palette', { a: 1, b: 2 }, { isDefaultExport: false });
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { Palette } from '../a/b/Palette';
+<Palette a={1} b={2} />;
+
+
+`;
+
+exports[`icon function component with props: function component with props 1`] = `
+
+import { muiIcon } from '../macro';
+muiIcon('@Palette', { a: 1, b: 2 });
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import Palette from '../a/b/Palette';
+<Palette a={1} b={2} />;
+
+
+`;
+
+exports[`icon function with options: function with options 1`] = `
+
+import { muiIcon } from '../macro';
+muiIcon('Palette', { isDefaultExport: false });
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { Palette } from '../a/b/Palette';
+Palette;
+
+
+`;
+
+exports[`icon function: function 1`] = `
+
+import { muiIcon } from '../macro';
+muiIcon('Palette');
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import Palette from '../a/b/Palette';
+Palette;
+
+
+`;
+
+exports[`icon template-tag as component: template-tag as component 1`] = `
+
+import { muiIcon } from '../macro';
+muiIcon\`@Palette\`;
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import Palette from '../a/b/Palette';
+<Palette />;
+
+
+`;
+
+exports[`icon template-tag: template-tag 1`] = `
+
+import { muiIcon } from '../macro';
+muiIcon\`Palette\`;
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import Palette from '../a/b/Palette';
+Palette;
+
+
+`;

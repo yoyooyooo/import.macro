@@ -17,7 +17,7 @@ npm i -D import.macro
 yarn add -D import.macro
 ```
 
-## unsure you have install babel-plugin-macros
+## ensure you have installed babel-plugin-macros
 
 `.babelrc`
 
@@ -27,7 +27,7 @@ yarn add -D import.macro
 }
 ```
 
-## useage
+## usage
 
 ```js
 import i from 'import.macro';
@@ -93,16 +93,16 @@ import filename from '../a/b/filename';
 filename;
 ```
 
-there are also a default import，you can config it by importHelper.defaultImport.
+there is also a default import，you can configure it by importHelper.defaultImport.
 
-when start with @, it will compiled to React component
+when start with @, it will be compiled to React component. For example,
 
 ```jsx
 import { customImport } from 'import.macro';
 customImport('@SomeComponent');
 ```
 
-会被编译为：
+will be compiled to,
 
 ```jsx
 <SomeComponent />

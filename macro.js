@@ -6,7 +6,7 @@ function Error(path, msg) {
   throw path.buildCodeFrameError('\nMacro error: \x1b[31m' + msg + '\x1b[0m');
 }
 
-function hasImported(state, path, source, importConfig) {
+function hasImported(state, _callingPath, source, importConfig) {
   if (importConfig[1].transformSource) {
     source = importConfig[1].transformSource(source);
   }

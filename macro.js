@@ -1,7 +1,6 @@
 const { createMacro } = require('babel-plugin-macros');
 const template = require('@babel/template');
 const t = require('@babel/types');
-const _ = require('lodash');
 
 function Error(path, msg) {
   throw path.buildCodeFrameError('\nMacro error: \x1b[31m' + msg + '\x1b[0m');
